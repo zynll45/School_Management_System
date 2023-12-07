@@ -1,14 +1,16 @@
 
 
 .classes {
-  display: inline-block;
+  /* display: inline-block;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
  
 }
 
 .clasTitle {
-
+   display: flex;
+ align-items: center;
+  justify-content: center;
 }
 
 .classBody {
@@ -41,4 +43,28 @@
  border: none;
  color: blue;
  background-color: white;
+}
+
+.CartButtonsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+}
+.ClassesCartButtons {
+background-color: white ;
+border: none;
+}
+.ClassesCartButtons:hover {
+cursor: pointer;
+}
+
+
+.Button {
+  color: blue;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }

@@ -1,7 +1,7 @@
 // app.js
 import { createNavbar } from "./function.js";
 import { createFooter } from "./footer.js";
-import { createContent } from "./content.js";
+import { createContent } from "./pages/content.js";
 document.addEventListener("DOMContentLoaded", function () {
   createNavbar();
   createContent();
@@ -14,5 +14,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
