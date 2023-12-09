@@ -59,3 +59,9 @@ function createDefaultContent() {
  
   </div>`;
 }
+
+// pages/content.js
+export function handleStudentButtonClick(classId) {
+  // Öğrenciler butonuna tıklandığında yapılacak işlemleri buraya ekleyin
+  console.log(`Öğrenciler butonuna tıklandı! Sınıf ID: ${classId}`);
+}

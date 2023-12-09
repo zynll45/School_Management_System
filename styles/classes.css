@@ -24,8 +24,8 @@
  padding: 15px;
  border: 1px solid;
  border-radius: 10px;
- width: 250px;
- height: 200px;
+ width: 350px;
+ height: 250px;
  margin-bottom: 90px;
  -webkit-border-radius: 10px;
  -moz-border-radius: 10px;
@@ -67,4 +67,10 @@ cursor: pointer;
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+.classesTable {
+ margin-left: 70px;
+ margin-right: 70px;
+  
 }
