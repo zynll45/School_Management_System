@@ -1,0 +1,44 @@
+
+
+.classes {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.clasTitle {
+
+}
+
+.classBody {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.classBodyDiv{
+  margin-left: 20px;
+ padding: 15px;
+ border: 1px solid;
+ border-radius: 10px;
+ width: 250px;
+ height: 200px;
+ margin-bottom: 90px;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ -o-border-radius: 10px;
+}
+
+.classButton  {
+
+ display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.classButton button {
+ border: none;
+ color: blue;
+ background-color: white;
+}
