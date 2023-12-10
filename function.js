@@ -10,7 +10,9 @@ export function createNavbar() {
       <button class="content-button">Students</button>
       <button class="content-button">Teachers</button>
       </div>
-    <div>ICON</div>
+    <div><span class="material-symbols-outlined">
+account_circle
+</span></div>
       
     </div>
   `;

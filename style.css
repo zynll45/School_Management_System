@@ -64,7 +64,7 @@ background-color: #C6C0EE;
   /* border: 1px solid #333; */
   padding: 10px;
   text-align: center;
-  height: 300px;
+  height: 400px;
   
 }
 
@@ -80,5 +80,16 @@ background-color: #C6C0EE;
 }
 
 .defaultContentDiv{
-  height: 600px;
+  /* height: 1800px; */
+}
+
+
+.material-symbols-outlined {
+  color: black;
+  font-size: 60px;
+  /* font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 100 */
 }
