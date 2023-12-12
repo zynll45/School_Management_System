@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       createContent(button.textContent);
     });
   });
-
+  localStorage.setItem("studentsStart",0);
+  localStorage.setItem("studentsFinish",10)
 });
 

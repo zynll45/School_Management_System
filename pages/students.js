@@ -1,25 +1,29 @@
 import { students } from "../data/StudentsData.js";
 
 
-const getStudents =(start,finish)=>{
-  console.log("calisti")
-  let filterStudent =students.slice(start, finish)
-  localStorage.setItem("studentsStart",start);
-  localStorage.setItem("studentsFinish",finish)
-  return filterStudent;
-  }
+// const getStudents =(start,finish)=>{
+//   console.log("calisti")
+//   let filterStudent =students.slice(start, finish)
+//   localStorage.setItem("studentsStart",start);
+//   localStorage.setItem("studentsFinish",finish)
+//   return filterStudent;
+//   }
   
-const student = getStudents(0,100)
+// const student = getStudents(0,100)
 
 
 export function createStudentPage(){
 
+  let prev =localStorage.getItem("studentsStart");
+  let next =localStorage.getItem("studentsFinish");
 
+
+  let student =students.slice(prev, next)
 
   const contentDiv = document.getElementById("content");
   contentDiv.innerHTML = `
   <div class="classes ">
-  <div class="classesTable"> 
+  <div class="classesTable">   
   <div class="tableDiv">
     <table class="table">
       <thead class="thead-dark">
@@ -36,10 +40,11 @@ export function createStudentPage(){
 `;
 let tableContent = `
     <div class="tableDiv">
+   
       <table class="table">
-        <thead class="thead-dark">
+        <thead class="tableThead">
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">Student Id</th>
             <th scope="col">Name</th>
             <th scope="col">Teacher</th>
             <th scope="col">Avarage Not</th>
@@ -48,11 +53,14 @@ let tableContent = `
           </tr>
         </thead>
         <tbody>
+        <div class="newStudentButtonDiv">
+        <button class="newStudentButton" >Add New Student</button>
+        </div>
   `;
   student.forEach((student, index) => {
   tableContent += `
     <tr>
-      <th scope="row">${index + 1}</th>
+      <th >${student.id}</th>
       <td>${student.name}</td>
       <td>${student.teacher}</td>
       <td>${student.AvarageNumber}</td>
@@ -85,14 +93,22 @@ classesTable.innerHTML = tableContent;
 }
 
 window.prev = function(){
-let prev =localStorage.getItem(studentsStart);
-let next =localStorage.getItem(studentsFinish);
-getStudents(prev-5,next-5)
+  console.log("PREV")
+let prev =localStorage.getItem("studentsStart");
+let next =localStorage.getItem("studentsFinish");
+
+localStorage.setItem("studentsStart",prev-10);
+localStorage.setItem("studentsFinish",next-10)
+createStudentPage()
 }
  
 window.next= function(){
-  let prev =localStorage.getItem(studentsStart);
-  let next =localStorage.getItem(studentsFinish);
-  getStudents(prev+5,next+5)
+  console.log("next")
+  let prev =localStorage.getItem("studentsStart");
+  let next =localStorage.getItem("studentsFinish");
+
+  localStorage.setItem("studentsStart",+prev+10);
+  localStorage.setItem("studentsFinish",+next+10)
+  createStudentPage()
   }
  

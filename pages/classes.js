@@ -2,8 +2,6 @@ import { data } from "../data/ClassesData.js";
 import { students } from "../data/StudentsData.js";
 
 export function createClasses() {
-  
-
   const contentDiv = document.getElementById("content");
 
   const classBodyDivs = data.map(
@@ -15,14 +13,15 @@ export function createClasses() {
         </button>
         <button class="ClassesCartButtons">
           <span class="material-symbols-outlined Button">edit_square</span>
-        </button>
+        </button>        
       </div>
+      <div class="calssesImgDiv"><img class="classImg" src=${data1.url}></div>
       <h2>${data1.name}</h2>
       <p>${data1.teacher}</p>
       <p>${data1.description}</p>
-      <div class="classButton">
-        <button class="deneme" data-class-id="${data1.id}"  onclick="deneme(${data1.id})">Students</button>
-        <button class="classes-button">Teachers</button>
+      <div class="classButtonDiv">
+        <button class="classButon" data-class-id="${data1.id}"  onclick="deneme(${data1.id})">Students</button>
+        <button class="classButon">Teachers</button>
       </div>
     </div>
   `
@@ -30,7 +29,7 @@ export function createClasses() {
 
   contentDiv.innerHTML = `
     <div class="classes">
-      <div class="clasTitle"><h2>Sınıflar</h2></div>
+      <div class="clasTitle"><h2>Classes</h2></div>
       <div class="classBody">
         ${classBodyDivs.join("")}
       </div>
@@ -42,7 +41,9 @@ export function createClasses() {
 
 export function createStudentTable(classId) {
   const classesTable = document.querySelector(".classesTable");
-  const filteredStudents = students.filter((student) => student.classesId == classId);
+  const filteredStudents = students.filter(
+    (student) => student.classesId == classId
+  );
 
   let tableContent = `
     <div class="tableDiv">
@@ -83,12 +84,12 @@ export function createStudentTable(classId) {
 //   // Öğrenciler butonuna tıklandığında yapılacak işlemleri buraya ekleyin
 //   console.log(`Öğrenciler butonuna tıklandı! Sınıf ID: ${classId}`);
 // }
-window.deneme = function (clasId) {  
-  createStudentTable(clasId)
-  console.log("Deneme fonksiyonu çalıştı!"+{clasId});
+window.deneme = function (clasId) {
+  createStudentTable(clasId);
+  console.log("Deneme fonksiyonu çalıştı!" + { clasId });
 };
 
-window.closeStudents =function (){
+window.closeStudents = function () {
   const classesTable = document.querySelector(".classesTable");
   classesTable.innerHTML = ``;
-}
+};

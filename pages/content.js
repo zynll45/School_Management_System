@@ -1,15 +1,15 @@
 import { createClasses } from "./classes.js";
 import { createStudentPage } from "./students.js";
 import { createTeacherPage } from "./teacher.js";
-
+import {createHome} from "./home.js"
 export function createContent(buttonName) {
   const contentDiv = document.getElementById("content");
 
   if (buttonName == "Home") {
-    createDefaultContent();
-    
+    // createDefaultContent();
+    createHome();
   } else if (buttonName == "Classes") {
-    createClasses();
+    createClasses();    
     //  contentDiv.innerHTML = `
     //   <div class="content">
     //     <div>${buttonName} - Content 1</div>
@@ -27,7 +27,8 @@ export function createContent(buttonName) {
   } else if (buttonName == "Teachers") {
     createTeacherPage();
   } else {
-    createDefaultContent();
+    // createDefaultContent();
+    createHome();
   }
 }
 

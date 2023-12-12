@@ -1,0 +1,104 @@
+.teachersClasses {
+  margin-left: 100px;
+}
+.Teacherstitle {
+  margin-bottom: 50px;
+  margin-right: 100px;
+}
+
+.teacherclassBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacherclassBodyDiv {
+  /* margin-left: 20px; */
+  padding: 15px;  
+  border-radius: 10px;
+  width: 350px;
+  height: 430px;
+  margin-bottom: 90px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: rgb(185, 185, 226);
+  box-shadow: 10px 10px 5px lightblue ;
+}
+
+.teacherclassButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacherImg {
+  width: auto;
+  height: 200px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.teacherContactButon {
+  border: none;
+  color: blue;
+  background-color: rgb(226, 68, 94);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.teacherContactButon:hover {
+  cursor: pointer;
+}
+.teacherButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teacherImg:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+}
+
+.newTeacherButtonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 30px;
+}
+
+.newTeacherButton {
+  border-radius: 100%;
+  background-color: rgb(152, 152, 231);
+  border: none;
+  font-size: 40px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.newTeacherButton:hover {
+  cursor: pointer;
+}
+
+.addNewTeacherP {
+  margin-left: 20px;
+}
