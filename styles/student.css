@@ -19,3 +19,34 @@ background-color: white;
     cursor: pointer;
 
     }
+
+    .newStudentButtonDiv{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin-bottom: 30px;
+    }
+
+    .newStudentButton{ 
+      border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px;
+ background-color: rgb(152, 152, 231);
+color: white;
+border: none;
+
+}
+.newStudentButton:hover{
+  cursor: pointer;
+}
+
+.ClassesCartButtons{
+  background-color: white;
+}
+
+.tableThead{
+ background-color: #C6C0EE;
+ border-radius: 10px;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ -o-border-radius: 10px;
+}

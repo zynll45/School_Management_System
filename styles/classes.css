@@ -11,6 +11,7 @@
    display: flex;
  align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .classBody {
@@ -22,27 +23,31 @@
 .classBodyDiv{
   margin-left: 20px;
  padding: 15px;
- border: 1px solid;
+ /* border: 1px solid; */
  border-radius: 10px;
  width: 350px;
- height: 250px;
+ height: 460px;
  margin-bottom: 90px;
  -webkit-border-radius: 10px;
  -moz-border-radius: 10px;
  -ms-border-radius: 10px;
  -o-border-radius: 10px;
+ background-color: #C6C0EE;
+ box-shadow: 10px 10px 5px lightblue ;
 }
 
-.classButton  {
+/* .classButton  {
 
  display: flex;
   align-items: center;
   justify-content: space-around;
-}
-.classButton button {
+  margin-bottom: 30px;
+} */
+.classButtonDiv button {
  border: none;
  color: blue;
- background-color: white;
+ background-color: #C6C0EE;
+ margin-bottom: 30px;
 }
 
 .CartButtonsDiv {
@@ -52,25 +57,41 @@
   
 }
 .ClassesCartButtons {
-background-color: white ;
+background-color:#C6C0EE ;
 border: none;
+color: blue;
 }
 .ClassesCartButtons:hover {
 cursor: pointer;
 }
 
-
-.Button {
-  color: blue;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+.classButon:hover{
+  cursor: pointer;
+  background-color: aqua;
+  border-radius: 10px;
 }
-
 .classesTable {
  margin-left: 70px;
  margin-right: 70px;
   
+}
+
+.material-symbols-outlined {
+  color: blue;
+}
+
+.calssesImgDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.classImg{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
